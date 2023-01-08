@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="smart jobs" content="smart jobs contact jobs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssjs/common.css">
+    <link rel="stylesheet" href="cssjs/signup.css">
+    <link rel="stylesheet" href="cssjs/gridStyle.css">
+<title>Contact</title>
+</head>
+
+
+<body lang="en">
+    <header class="header">
+        <img src="images/logo.png" alt="Logo of the website which reads Smart Jobs" class="logo">
+        <nav class="nav-bar">
+            <a class="nav-bar__home" href="index.html" >Home</a>
+            <a class="nav-bar__jobs" href="jobs.html" >Jobs</a>
+            <a class="nav-bar__post-jobs" href="postJobs.html" >Post Jobs</a>
+            <a class="nav-bar__saved-jobs" href="savedJobs.html" >Saved Jobs</a>
+            <a class="nav-bar__about-us" href="about.html" >About Us</a>
+            <a class="nav-bar__contact-us" href="contact.html" >Contact Us</a>
+            <a class="nav-bar__sign-in" href="sign.html" >Sign in/up</a>
+        </nav>
+
+        <img class="menu menu--open" onclick="openMenu()" src="images/open-menu.png" alt="">
+        <nav class="nav-bar nav-bar--minimized">
+            <img class="menu menu--close" onclick="closeMenu()" src="images/close-menu.png" alt="">
+            <div class="nav-bar__elements">
+                <a class="nav-bar__home" href="index.html" >Home</a>
+                <a class="nav-bar__jobs" href="jobs.html" >Jobs</a>
+                <a class="nav-bar__post-jobs" href="postJobs.html" >Post Jobs</a>
+                <a class="nav-bar__saved-jobs" href="savedJobs.html" >Saved Jobs</a>
+                <a class="nav-bar__about-us" href="about.html" >About Us</a>
+                <a class="nav-bar__contact-us" href="contact.html" >Contact Us</a>
+                <a class="nav-bar__sign-in" href="sign.html" >Sign in/up</a>  
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="main-content main-content--contact">
+
+            <section class="heading">
+                <h1>Contact Us</h1>
+                <h2>How can we help?</h2>
+            </section>
+
+            <section class="contact-info">
+
+                    <table class="contact-info__table">
+                        <tr><td>Address</td><td><address>Addis Ababa, Ethiopia</address></td></tr>
+                        <tr><td>Phone</td><td>+251948671563</td></tr>
+                        <tr><td>Email</td><td>shamilbedru47@gmail.com</td></tr>
+                    </table>
+
+                <div class="audio audio--contact">
+                    <audio src="audios/contact-info.mp3" alt="our contact information in audio" controls></audio>
+                </div>
+
+                <div class="feedback-form">
+                    <form action="submit">
+                        
+                        <div>
+                            <label for="first-name">First Name </label>
+                            <input type="text" name="first-name" id="first-name" required><br>
+                        
+                        </div>
+                        
+                        <div>
+                            <label for="last-name">Last Name </label>
+                            <input type="text" name="last-name" id="last-name"><br>
+                        
+                        </div>
+                        
+                        <div>
+                            <label for="company-name">Company Name </label>
+                            <input type="text" name="company-name" id="company-name"><br>
+                        
+                        </div>
+                        
+                        <div>
+                            <label for="company-email">Company Email </label>
+                            <input type="email" name="company-email" id="company-email"><br>
+                        </div>
+
+                        <div>
+                            <label for="country">Country </label>
+                            <input type="text" name="country" id="country"><br>
+                        </div>
+
+                        <div>
+                            <label for="comment">Comment </label>
+                            <input type="text" name="comment" id="comment"><br>
+                        </div>
+
+                        <button class="btn btn--submit" type="submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+    </main>
+
+    
+    <footer class="footer">
+        <img width="120px" src="images/logo.png" alt="Logo of the website which reads Smart Jobs" class="logo">
+        
+        <ul class="footer__contact-info" >
+            <li> <i>+251948671563</i></li>
+            <li> <i>shamilbedru47@gmail.com</i></li> 
+            <li> <Address>Addis Ababa, Ethiopia</Address></li>
+        </ul>
+
+        <div class="footer__socials">
+            <a href="http://facebook.com/"><img src="images/fb.png" alt="facebook icon"></a>
+            <a href="http://instagram.com/"><img src="images/ig.svg" alt="instagram icon"></a>
+            <a href="http://telegram.com/"><img src="images/tg.png" alt="telegam icon"></a>
+            <a href="http://twitter.com/"><img src="images/tw.png" alt="twitter icon"></a>
+        </div>
+
+    </footer>
+
+    
+
+    <script>
+        function openMenu(){
+            let ele = document.getElementsByClassName('nav-bar--minimized')[0];
+            ele.style.right = '0';
+        }
+    
+        function closeMenu(){
+            let ele = document.getElementsByClassName('nav-bar--minimized')[0];
+    
+            ele.style.right = '-100%';
+        }
+    </script>
+</body>
+
+</html>

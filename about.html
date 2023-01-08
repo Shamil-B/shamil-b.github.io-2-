@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssjs/common.css">
+    <link rel="stylesheet" href="cssjs/gridStyle.css">
+    <title>Document</title>
+</head>
+
+<body lang="en">
+    <header class="header">
+        <img src="images/logo.png" alt="Logo of the website which reads Smart Jobs" class="logo">
+        <nav class="nav-bar">
+            <a class="nav-bar__home" href="index.html" >Home</a>
+            <a class="nav-bar__jobs" href="jobs.html" >Jobs</a>
+            <a class="nav-bar__post-jobs" href="postJobs.html" >Post Jobs</a>
+            <a class="nav-bar__saved-jobs" href="savedJobs.html" >Saved Jobs</a>
+            <a class="nav-bar__about-us" href="about.html" >About Us</a>
+            <a class="nav-bar__contact-us" href="contact.html" >Contact Us</a>
+            <a class="nav-bar__sign-in" href="sign.html" >Sign in/up</a>
+        </nav>
+
+        <img class="menu menu--open" onclick="openMenu()" src="images/open-menu.png" alt="">
+        <nav class="nav-bar nav-bar--minimized">
+            <img class="menu menu--close" onclick="closeMenu()" src="images/close-menu.png" alt="">
+            <div class="nav-bar__elements">
+                <a class="nav-bar__home" href="index.html" >Home</a>
+                <a class="nav-bar__jobs" href="jobs.html" >Jobs</a>
+                <a class="nav-bar__post-jobs" href="postJobs.html" >Post Jobs</a>
+                <a class="nav-bar__saved-jobs" href="savedJobs.html" >Saved Jobs</a>
+                <a class="nav-bar__about-us" href="about.html" >About Us</a>
+                <a class="nav-bar__contact-us" href="contact.html" >Contact Us</a>
+                <a class="nav-bar__sign-in" href="sign.html" >Sign in/up</a>  
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="main-content">
+
+            <h1 class="main-content__title">About Us</h1>
+            <video class="main-content__video" width="20%" src="videos/smart.mp4" alt="Video about Smart Jobs" controls></video>
+            
+            <img class="main-content__image" width="60%" src="images/about.jpg" alt="A cartoon image of people in a workplace">
+            
+            <p class="main-content__text"><strong>We’re building the largest and best career site in the world to help you find the job you hope for.</strong></p>
+    </main>
+
+    
+    <footer class="footer">
+        <img width="120px" src="images/logo.png" alt="Logo of the website which reads Smart Jobs" class="logo">
+        
+        <ul class="footer__contact-info" >
+            <li> <i>+251948671563</i></li>
+            <li> <i>shamilbedru47@gmail.com</i></li> 
+            <li> <Address>Addis Ababa, Ethiopia</Address></li>
+        </ul>
+
+        <div class="footer__socials">
+            <a href="http://facebook.com/"><img src="images/fb.png" alt="facebook icon"></a>
+            <a href="http://instagram.com/"><img src="images/ig.svg" alt="instagram icon"></a>
+            <a href="http://telegram.com/"><img src="images/tg.png" alt="telegam icon"></a>
+            <a href="http://twitter.com/"><img src="images/tw.png" alt="twitter icon"></a>
+        </div>
+
+    </footer>
+
+
+
+    <script>
+        function openMenu(){
+            let ele = document.getElementsByClassName('nav-bar--minimized')[0];
+            ele.style.right = '0';
+        }
+    
+        function closeMenu(){
+            let ele = document.getElementsByClassName('nav-bar--minimized')[0];
+    
+            ele.style.right = '-100%';
+        }
+    </script>
+
+
+<script>
+    function openMenu(){
+        let ele = document.getElementsByClassName('nav-bar--minimized')[0];
+        ele.style.right = '0';
+    }
+
+    function closeMenu(){
+        let ele = document.getElementsByClassName('nav-bar--minimized')[0];
+
+        ele.style.right = '-100%';
+    }
+</script>
+</body>
+</html>
