@@ -140,6 +140,12 @@ a{
     border-top: 0.5px solid rgb(248, 248, 248);
 }
 
+.error{
+    color: red;
+    font-size: 1.1rem;
+    margin-bottom: -1rem;
+    padding: 10px;
+}
 
 
 @media only screen and (max-width: 1200px) {
@@ -163,6 +169,10 @@ a{
 
     .nav-bar--minimized{
         display: flex;
+    }
+
+    .footer{
+        flex-direction: column;
     }
 }
 

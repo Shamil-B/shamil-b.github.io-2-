@@ -44,28 +44,32 @@
         <section class="sign-up">
             <h2>Sign up</h2>
 
-            <form action="submit">
+            <form>
 
                 <div class="sign-up__first">
                     <label for="first">First Name</label>
+                    <p class="error" id="error-first-u"></p>
                     <input type="text" id="first"><br>
                 </div>
 
                 <div class="sign-up__last">
                     <label for="last">Last Name</label>
+                    <p class="error" id="error-last-u"></p>
                     <input type="text" id="last"><br>
                 </div>
 
                 <div class="sign-up__email">
                     <label for="email">Email</label>
+                    <p class="error" id="error-email-u"></p>
                     <input type="email" id="email"><br>
                 </div>
 
                 <div class="sign-up__pass">
                     <label for="password">Password</label>
+                    <p class="error" id="error-pass-u"></p>
                     <input type="password" id="password"><br>
                 </div>
-                <button type="submit" class="btn btn--sign-up">Sign up</button>
+                <button class="btn btn--sign-up" onclick="validateSignUp()" type="button">Sign up</button>
                 <span onclick="toSignIn()">| Sign in |</a>
 
 
@@ -74,18 +78,21 @@
 
         <section class="sign-in">
             <h2>Sign in</h2>
-            <form action="submit">
+
+            <form>
                 <div class="sign-in__email">
                     <label for="first-name-l">Email</label>
-                    <input type="email" id="first-name-l"><br>
+                    <p class="error" id="error-email-i"></p>
+                    <input type="email" id="email-l"><br>
                 </div>
 
                 <div class="sign-in__pass">
                     <label for="password-l">Password</label>
+                    <p class="error" id="error-pass-i"></p>
                     <input type="password" id="password-l"><br>
                 </div>
 
-                <button class="btn btn--sign-in" type="submit">Sign in</button>
+                <button class="btn btn--sign-in" type="button" onclick="validateSignIn()">Sign in</button>
                 <span onclick="toSignUp()">| Sign up |</span>
             </form>
 
@@ -113,31 +120,6 @@
 
     
 
-    <script>
-        function openMenu(){
-            let ele = document.getElementsByClassName('nav-bar--minimized')[0];
-            ele.style.right = '0';
-        }
-    
-        function closeMenu(){
-            let ele = document.getElementsByClassName('nav-bar--minimized')[0];
-    
-            ele.style.right = '-100%';
-        }
-
-        function toSignIn(){
-            let ele1 = document.getElementsByClassName('sign-up')[0];
-            ele1.style.display = 'none';
-            let ele2 = document.getElementsByClassName('sign-in')[0];
-            ele2.style.display = 'block';
-        }
-
-        function toSignUp(){
-            let ele1 = document.getElementsByClassName('sign-in')[0];
-            ele1.style.display = 'none';
-            let ele2 = document.getElementsByClassName('sign-up')[0];
-            ele2.style.display = 'block';
-        }
-    </script>
+<script src="cssjs/index.js"></script>
 </body>
 </html>

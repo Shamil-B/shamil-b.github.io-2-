@@ -42,50 +42,59 @@
 
         <section class="post">
             <h2>Post a job</h2>
-            <form action="submit">
+
+            <form>
 
                 <div>
-                    <label for="name">Company Name</label>
-                <input type="text" id="name"><br>
+                    <label for="name">Company Name*</label>
+                    <p class="error" id="error-comp-name"></p>
+                    <input type="text" id="name"><br>
                 </div>
 
                 <div>
-                    <label for="title">Job Title</label>
-                <input type="text" id="title"><br>
+                    <label for="title">Job Title*</label>
+                    <p class="error" id="error-title"></p>
+                    <input type="text" id="title"><br>
                 </div>
 
 
                 <div>
-                    <label for="desc">Job Description</label>
+                    <label for="desc">Job Description*</label>
+                    <p class="error" id="error-desc"></p>
                     <input type="text" id="desc"><br>
                 </div>
 
                 <div>
-                    <label for="job-type">Job Type</label>
+                    <label for="job-type">Job Type (optional)</label>
+                    <p class="error" id="error-type"></p>
                     <input type="text" id="job-type"><br>
                 </div>
 
                 <div>
-                    <label for="loc">Location</label>
+                    <label for="loc">Location*</label>
+                    <p class="error" id="error-loc"></p>
                     <input type="text" id="loc"><br>
                 </div>
 
                 <div>
-                    <label for="end-date">End Date</label>
+                    <label for="end-date">End Date*</label>
+                    <p class="error" id="error-date"></p>
                     <input type="date" id="end-date"><br>
                 </div>
                 
                 <div>
-                    <label for="web">Company Website</label>
+                    <label for="web">Company Website (optional)</label>
+                    <p class="error" id="error-website"></p>
                     <input type="text" id="web"><br>
                 </div>
                 
                 <div>
-                    <label for="email">Email</label>
+                    <label for="email">Email*</label>
+                    <p class="error" id="error-email"></p>
                     <input type="email" id="email"><br>
                 </div>
 
-                <button class="btn btn--post" type="submit">Post</button>
+                <button class="btn btn--post" type="button" onclick="validatePost()">Post</button>
 
 
             </form>
@@ -112,19 +121,7 @@
 
     </footer>
 
-
-    <script>
-        function openMenu(){
-            let ele = document.getElementsByClassName('nav-bar--minimized')[0];
-            ele.style.right = '0';
-        }
-    
-        function closeMenu(){
-            let ele = document.getElementsByClassName('nav-bar--minimized')[0];
-    
-            ele.style.right = '-100%';
-        }
-    </script>
+<script src="cssjs/index.js"></script>
     
 </body>
 </html>

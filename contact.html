@@ -64,39 +64,45 @@
                     <form action="submit">
                         
                         <div>
-                            <label for="first-name">First Name </label>
+                            <label for="first-name">First Name* </label>
+                            <p class="error" id="error-first"></p>
                             <input type="text" name="first-name" id="first-name" required><br>
                         
                         </div>
                         
                         <div>
-                            <label for="last-name">Last Name </label>
+                            <label for="last-name">Last Name* </label>
+                            <p class="error" id="error-last"></p>
                             <input type="text" name="last-name" id="last-name"><br>
                         
                         </div>
                         
                         <div>
-                            <label for="company-name">Company Name </label>
+                            <label for="company-name">Company Name* </label>
+                            <p class="error" id="error-comp-name"></p>
                             <input type="text" name="company-name" id="company-name"><br>
                         
                         </div>
                         
                         <div>
-                            <label for="company-email">Company Email </label>
+                            <label for="company-email">Company Email* </label>
+                            <p class="error" id="error-comp-email"></p>
                             <input type="email" name="company-email" id="company-email"><br>
                         </div>
 
                         <div>
-                            <label for="country">Country </label>
+                            <label for="country">Country (optional) </label>
+                            <p class="error" id="error-country"></p>
                             <input type="text" name="country" id="country"><br>
                         </div>
 
                         <div>
-                            <label for="comment">Comment </label>
-                            <input type="text" name="comment" id="comment"><br>
+                            <label for="comment">Comment* </label>
+                            <p class="error" id="error-comment"></p>
+                            <input type="text" name="comment" id="comment" required><br>
                         </div>
 
-                        <button class="btn btn--submit" type="submit">Submit</button>
+                        <button class="btn btn--submit" type="button" onclick="validateFeedback()">Submit</button>
                     </form>
                 </div>
             </section>
@@ -123,18 +129,7 @@
 
     
 
-    <script>
-        function openMenu(){
-            let ele = document.getElementsByClassName('nav-bar--minimized')[0];
-            ele.style.right = '0';
-        }
-    
-        function closeMenu(){
-            let ele = document.getElementsByClassName('nav-bar--minimized')[0];
-    
-            ele.style.right = '-100%';
-        }
-    </script>
+   <script src="cssjs/index.js"></script>
 </body>
 
 </html>
